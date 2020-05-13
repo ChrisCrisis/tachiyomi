@@ -28,13 +28,22 @@
         android:theme="@style/Theme.Tachiyomi.Light"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui2.RockActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.Splash">
+            android:theme="@style/Theme.MaterialComponents.DayNight">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Splash">
+            <!--            <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>-->
             <!--suppress AndroidDomInspection -->
             <meta-data
                 android:name="android.app.shortcuts"
