@@ -10,6 +10,7 @@
         android:id="@+id/rock_view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/backgroundDark"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
