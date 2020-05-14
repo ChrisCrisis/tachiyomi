@@ -28,7 +28,7 @@
         android:theme="@style/Theme.Tachiyomi.Light"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui2.RockActivity"
+            android:name=".ui2.base.activity.RockActivity"
             android:launchMode="singleTop"
             android:theme="@style/Theme.MaterialComponents.DayNight">
             <intent-filter>

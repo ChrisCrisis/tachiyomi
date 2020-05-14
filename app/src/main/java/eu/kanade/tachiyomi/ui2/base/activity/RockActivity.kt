@@ -1,4 +1,4 @@
-package eu.kanade.tachiyomi.ui2
+package eu.kanade.tachiyomi.ui2.base.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

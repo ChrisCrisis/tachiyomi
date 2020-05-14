@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="eu.kanade.tachiyomi.ui2.RockActivity">
+    tools:context="eu.kanade.tachiyomi.ui2.base.activity.RockActivity">
 
     <FrameLayout
         android:id="@+id/rock_placeholder"
