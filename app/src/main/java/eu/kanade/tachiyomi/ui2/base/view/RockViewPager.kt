@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
+import eu.kanade.tachiyomi.ui2.base.fragment.RockDiscoverFragment
+import eu.kanade.tachiyomi.ui2.base.fragment.RockFavoritesFragment
+import eu.kanade.tachiyomi.ui2.base.fragment.RockRecentFragment
 
 class RockViewPager(context: Context, attributeSet: AttributeSet) : ViewPager(context, attributeSet) {
     var smoothScrollEnabled = false
@@ -31,9 +34,9 @@ class RockViewPager(context: Context, attributeSet: AttributeSet) : ViewPager(co
     }
 
     class PagerAdapter(supportFragmentManager: FragmentManager) : FragmentPagerAdapter(supportFragmentManager) {
-        val favoritesFragment = Fragment()
-        val recentFragment = Fragment()
-        val discoverFragment = Fragment()
+        val favoritesFragment = RockFavoritesFragment()
+        val recentFragment = RockRecentFragment()
+        val discoverFragment = RockDiscoverFragment()
         val settingsFragment = Fragment()
         override fun getItem(position: Int): Fragment {
             return when (position) {
