@@ -3,6 +3,7 @@ package eu.kanade.tachiyomi.ui2.base.activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import eu.kanade.tachiyomi.R
+import eu.kanade.tachiyomi.ui2.base.view.RockViewPager
 import kotlinx.android.synthetic.main.activity_rock.*
 
 class RockActivity : AppCompatActivity() {
@@ -10,6 +11,10 @@ class RockActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rock)
+
+        rock_view_pager?.let {
+            it.adapter = RockViewPager.PagerAdapter(supportFragmentManager)
+        }
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
