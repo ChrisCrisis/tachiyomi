@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="eu.kanade.tachiyomi.ui2.base.activity.RockActivity">
 
-    <FrameLayout
-        android:id="@+id/rock_placeholder"
+    <eu.kanade.tachiyomi.ui2.base.view.RockViewPager
+        android:id="@+id/rock_view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
